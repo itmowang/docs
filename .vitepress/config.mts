@@ -6,6 +6,9 @@ export default defineConfig({
   description: "记录，学习，体验生活",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: 'Shell', link: '/shell/index' }
@@ -25,7 +28,6 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/itmowang' }
     ],

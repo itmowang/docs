@@ -27,6 +27,16 @@ const sidebarGit = (): DefaultTheme.SidebarItem[] => {
   ]
 }
 
+const sidebarMarkdown = ():DefaultTheme.SidebarItem[]=>{
+  return [
+    {
+      items: [
+        { text: '介绍', link: '/markdown/index' },
+        { text: 'Markdown 语法', link: '/markdown/chapter1' },
+      ]
+    }
+  ]
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -40,9 +50,15 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Shell', link: '/shell/index' },
-      { text: 'Git', link: '/git/index' }
+      { text: '工具类', 
+        items:[
+          { text: 'Git', link: '/git/index' },
+          { text: 'Markdown', link: '/markdown/index' }
+        ]
+      }
     ],
 
+    // { text: '工具类', link: '/git/index' }
     sidebar: {
       '/shell': {
         base: '',
@@ -51,6 +67,10 @@ export default defineConfig({
       '/git': {
         base: '',
         items: sidebarGit()
+      },
+      '/markdown':{
+        base: '',
+        items: sidebarMarkdown()
       }
     },
 

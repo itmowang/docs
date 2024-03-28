@@ -29,6 +29,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/itmowang' }
-    ]
-  }
+    ],
+
+  },
+  outDir: './docs'
+
 })

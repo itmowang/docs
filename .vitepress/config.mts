@@ -11,7 +11,8 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Shell', link: '/shell/index' }
+      { text: 'Shell', link: '/shell/index' },
+      { text: 'Git', link: '/git/index' }
     ],
 
     sidebar: [
@@ -25,6 +26,13 @@ export default defineConfig({
           { text: '04- Shell脚本学习-条件控制', link: '/shell/chapter4' },
           { text: '05- Shell脚本学习-函数', link: '/shell/chapter5' },
           { text: '06- Shell脚本学习-其它', link: '/shell/chapter6' }
+        ]
+      },
+      {
+        text: 'Shell',
+        items: [
+          { text: '介绍', link: '/git/index' },
+          { text: '常用 Git 命令清单', link: '/git/chapter1' },
         ]
       }
     ],

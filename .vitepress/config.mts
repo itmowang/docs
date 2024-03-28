@@ -1,4 +1,32 @@
-import { defineConfig } from 'vitepress'
+import { DefaultTheme, defineConfig } from 'vitepress'
+
+function sidebarShell(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      items: [
+        { text: '介绍', link: '/shell/index' },
+        { text: '01- Shell脚本学习-入门', link: '/shell/chapter1' },
+        { text: '02- Shell脚本学习-运算符', link: '/shell/chapter2' },
+        { text: '03- Shell脚本学习-字符串和数组', link: '/shell/chapter3' },
+        { text: '04- Shell脚本学习-条件控制', link: '/shell/chapter4' },
+        { text: '05- Shell脚本学习-函数', link: '/shell/chapter5' },
+        { text: '06- Shell脚本学习-其它', link: '/shell/chapter6' }
+      ]
+    }
+  ]
+}
+
+const sidebarGit = (): DefaultTheme.SidebarItem[] => {
+  return [
+    {
+      items: [
+        { text: '介绍', link: '/git/index' },
+        { text: '常用 Git 命令清单', link: '/git/chapter1' },
+      ]
+    }
+  ]
+}
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,27 +43,17 @@ export default defineConfig({
       { text: 'Git', link: '/git/index' }
     ],
 
-    sidebar: [
-      {
-        text: 'Shell',
-        items: [
-          { text: '介绍', link: '/shell/index' },
-          { text: '01- Shell脚本学习-入门', link: '/shell/chapter1' },
-          { text: '02- Shell脚本学习-运算符', link: '/shell/chapter2' },
-          { text: '03- Shell脚本学习-字符串和数组', link: '/shell/chapter3' },
-          { text: '04- Shell脚本学习-条件控制', link: '/shell/chapter4' },
-          { text: '05- Shell脚本学习-函数', link: '/shell/chapter5' },
-          { text: '06- Shell脚本学习-其它', link: '/shell/chapter6' }
-        ]
+    sidebar: {
+      '/shell': {
+        base: '',
+        items: sidebarShell()
       },
-      {
-        text: 'Shell',
-        items: [
-          { text: '介绍', link: '/git/index' },
-          { text: '常用 Git 命令清单', link: '/git/chapter1' },
-        ]
+      '/git': {
+        base: '',
+        items: sidebarGit()
       }
-    ],
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/itmowang' }
     ],

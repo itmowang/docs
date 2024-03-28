@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as l,a2 as t}from"./chunks/framework.B_XxXr4T.js";const f=JSON.parse('{"title":"Shell脚本学习","description":"","frontmatter":{},"headers":[],"relativePath":"shell/index.md","filePath":"shell/index.md"}'),h={name:"shell/index.md"},s=t("",5),o=[s];function r(i,n,_,c,d,p){return l(),a("div",null,o)}const b=e(h,[["render",r]]);export{f as __pageData,b as default};

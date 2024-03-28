@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "文档站",
+  title: "魔王の个人学习文档站",
   description: "记录，学习，体验生活",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -22,7 +22,6 @@ export default defineConfig({
           { text: '04- Shell脚本学习-条件控制', link: '/shell/chapter4' },
           { text: '05- Shell脚本学习-函数', link: '/shell/chapter5' },
           { text: '06- Shell脚本学习-其它', link: '/shell/chapter6' }
-
         ]
       }
     ],

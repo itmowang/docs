@@ -1,8 +1,10 @@
 # 常用 Git 命令清单
 标签： git, git常用命令
+
 ---
 [TOC]
 
+## 基本
 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。  
 
 ![](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015120901.png)  
